@@ -8,26 +8,59 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Serif&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Serif&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <title>Netflix</title>
 </head>
 <body>
-    <div class="capa">
-        <div class="fondo">
-            <h1 id="logo">NETFLIX</h1>
+    <nav class="contenedor-nav">
+        <div class="cartelera">
+            <img src="src/img/cartelera.webp" alt="" class="cartelera">
         </div>
-        <div class="login">
-            <h2>Iniciar Sesión</h2>
-        </div>
-        <div class="vinculos">
-            <p>¿Preguntas? Llama al <a id="tel" href="tel">800-062-2406</a></p>
-            <p>
-                <h4>Preguntas Frecuentes</h4>Centro de ayuda<h4></h4>
-                <h4>Hola</h4>
-            </p>
-        
-        </div>
+        <div class="menu">
+            <div class="icon-logo"><img src="src/img/icononetflix.png" alt="icon-netflix"></div>
+            <div class="menu-navegacion">
+                <ul class="primer-menu">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Series</a></li>
+                    <li><a href="#">Peliculas</a></li>
+                    <li><a href="#">Novedades Populares</a></li>
+                    <li><a href="#">Mi lista</a></li>
+                </ul>
+                <div class="navegacion-secundaria">
+                    <div class="busqueda"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAACMklEQVRIic2UO09UURSFv33HB4hMJjhObBQLMNHKxsLS+EpsFOQXWKixtCBqbDQkApHe1sJSjZUlURorSx8x0UKDE+Zczz53mKgwc7fFDAkqd7gESdzVSfY661vnCVtc0q0Zx/F+ou2nU+yAQAGxeaJotlwsvtsUIK7Xj9BMp004l6F5laYyXhkozm0YEKuOGfIQ2IXxFeEpwlszW4pg2JALwBDQMuTG3lLxft7V4FRPOQ3LTkOr5sOdT2Y9f2rMrFBTveI0fHcarKZ6OZd5tVrtcz7M5520KswP7/3guoDYJ9edBnOqj3MlApwmk06DxZo8yNJEKwMTGwOQKMq9p8sFmQFaho2aWSFTaGbS2dO6mUWZwjXKaXjtNJj3/uBa/QjAObcb6BFYEJF0IwAx5gFaUVTJBJTL5QbQNChtxBzAhIE2SZJMgIikCO+BAVevH85rXq1W+8COAo09/f0fMwGdKM8AaKbX8gK29fZeAukFeS4iS13FC4uL+5yGutOwVPP+xHrmtSQ55DR4p6HlQjiWK1FN9Wr7LYTE+WQkSxcnyXGn+qX9BvRFN8+//qKaD3dFuN3uyazAIyLemFnTYFjMLoKM/D5X7pVLxVu5AADO+1EkmgHWvNvAN4Q5jPOrrCbLpeLNXACAD2Y7S1o/K9gZYBBhh2GfxeRluvzzSaVSWXSqUyDj60E2VU7DROfcrHMm+b/v/wyiU6sgjYUQhrYAEiachoZTPfnPzVdqS5J3q1/fK11gLr2u6QAAAABJRU5ErkJggg=="></div>
+                    <div class="kids"><a href="#">Niños</a></div>
+                    <div class="notificaciones"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAv0lEQVRIie2TMQrCMBSGX1yqeATd7GH0AD2Gxeu4epgiuOisU71DJ+VzMIVQmprXWCjoB29L/u9PSER+BiAFbnbS0H0ThSMTkZWdTFvQC5AAuW1ecwW2QBIbvgQu+DkDi5jmXeGuRH8SYBcQXpP3EZwUgqMvx3QIKhGZBfapjDFzrYDA8HeQMa1Zmn/Qi79ghAJgCuy1QcABaH2qzYWF4oM1KT6eQESe2vYOj4i9AwPcnasohxBsgNLO+uuC0fICbQ1SYRRvdGAAAAAASUVORK5CYII="></div>
+                    <a href="#">
+                        <div class="perfiles">
+                            <img src="src/img/perfil.png" alt="perfil">
+                            <span class="triangulo"></span>
+                        </div>
+                    </a>
+                </div>
+            </div>  
+        </nav>
+    <div class="container-info">
+        <section class="titulo-sinopsis">
+            <div class="cartel-titulo">
+                <img src="src/img/titulo-braking.webp" alt="" class="img-titulo">
+            </div>
+            <div class="sinopsis">
+                <p class="info">
+                    Un profesor de Química de secundaria con cáncer terminal se
+                    asocia a un exestudiante para asegurar el futuro de su familia al
+                    fabricar y vender metanfetamina.
+                </p>
+            </div>
+            <div class="botones-play-info">
+                <a href="#">
+                    <button class="boton-reproducir">
+                        <span> Reproducir </span>
+                    </button>
+                </a>
+            </div>
+        </section>
     </div>
-   
-    
 </body>
 </html>
