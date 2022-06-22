@@ -1,16 +1,8 @@
 body{
     margin: 0;
-    /* background-color: black; */
+    background-color: rgb(20,20,20);
     user-select: none;
 }
-/* .contenedor-nav{
-    background-color: rgb(255, 2, 2);
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 68px;
-    
-} */
 .contenedor-nav .cartelera{
     position: absolute;
     width: 100%;
@@ -18,86 +10,84 @@ body{
     left: 0;
     right: 0;
     bottom: 0;
-    /* background: linear-gradient(to top, black, transparent); */
-}
-
-.icon-logo{
-    width: 120px;
-    height: 68px;
-    display: block;
-    position: absolute;
-
+    background-size: cover;
 }
 .icon-logo img{
-    width: 96px;
-    height: 33px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 56px;
-    padding-right: 10px;
-    display: inline-block;
+    position: absolute;
+    width: 6em;
+    height: 2.06em;
+    margin-left: 1.45em;
+    padding-top: 1.25em;
+    padding-bottom: 1.25em;
+    padding-left: 3.5em;
+    padding-right: 0.625em;
+    display: block;
+    /* background-size: cover; */
 }
 
 .contenedor-nav .menu{
     display: block;
-    position: absolute;
+    position: relative;
+    padding: 0;
     right: 0px;
-    width: 100%;
+    width: 88.9em;
     height: 68px;
-    background-color: rgb(20, 20, 20);
+    background-color: rgba(212, 21, 21, 0);
     background: linear-gradient(to bottom, black, transparent);
-    margin-left: 50px;
+    margin-left: 0;
     
     
 }
 .menu-navegacion{
     background-color: rgba(223, 76, 23, 0);
-    display: inline-block;
-    width: 550px;
-    height: 68px;
+    display: block;
+    top: 0;
+    width: 34.375em;
+    height: 4.25em;
     position: absolute;
-    left: 180px;
-    
-
+    left: 11em;
 }
 .contenedor-nav .primer-menu{
     background-color: rgba(90, 8, 243, 0);
     position: absolute;
-    left: 15px;
-    display: inline-block;
-    width: 500px;
-    margin-left: 5px;
-    margin-top: 25px;
-    padding-left: 10px;
+    left: 0.94em;
+    /* display: inline-block; */
+    width: 31.25em;
+    margin-left: 0.32em;
+    margin-top: 1.57em;
+    padding-left: 0.63em;
     align-items: center;
 }
 .contenedor-nav .primer-menu li{
+    
     list-style: none;
     display: inline-block;
-    margin-left: 18px;
+    margin-left: 1.125em;
     text-decoration-line: none;
-    font-size: 16px;
+    font-size: 1em;
     text-decoration: solid;
+    
     
 }
 .primer-menu a{
     text-decoration: none;
-    font-size: 14px;
+    font-size: 0.875em;
     font-weight: 700;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #fff;  
+    justify-content: space-between;
 }
 a:hover{
-    color: rgba(20, 20, 20, 0);
-    transition: .4s;
+    color: rgb(92, 87, 87);
+    transition: .4s all;
 }
 
 /* iconos navegacion secundaria */
 
 .navegacion-secundaria{
-    background-color: rgba(255, 127, 80, 0);
+    background-color: rgba(100, 255, 80, 0);
     position: absolute;
-    left: 500px;
+    left: 31.25em;
     display: inline-block;
     width: 207px;
     height: 68px;
@@ -129,7 +119,7 @@ a:hover{
 .kids a{
     text-decoration: none;
     color: rgb(255, 255, 255);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:Arial, Helvetica, sans-serif ;
     background-color: rgba(0, 0, 255, 0);
     width: 40px;
     height: 65px;
@@ -178,29 +168,29 @@ a:hover{
     border-color: #fff transparent transparent transparent;
     margin-bottom: 12px;
 }
-/* section */
+/* header */
 .container-info{
-    width: 512.266px;
-    height: 526.500px;
+    background-color: rgba(0, 255, 255, 0);
     position: absolute;
-    top: 0;
+    width: 512.266px;
+    height: 25em;
+    top: 150px;
     bottom: 35%;
     left: 4%;
     width: 36%;
     display: flex;
     flex-direction: column;
-
-
+    justify-content: flex-end;
 }
 
 .titulo-sinopsis{
-    position: absolute;
     top: 36%;
-    left: 4%;
+    left: 3.5%;
     display: block;
     width: 512.266px;
     height: 373.484px;
-    background-color: rgba(0, 255, 255, 0);
+    background-color: rgba(255, 0, 212, 0);
+    flex-direction: column;
 }
 .cartel-titulo .img-titulo{
     width: 100%;
@@ -219,4 +209,157 @@ a:hover{
     background-color: rgba(137, 43, 226, 0);
     width: 100%;
     height: 50px;
+}
+
+.container-info .botones-play-info .boton-play{
+    background: #fff;
+    border: none;
+    border-radius: 0.31em;
+    padding: 0.93em 1.87em;
+    color: black;
+    margin-right: 1.25em;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+.container-info .botones-play-info .boton-info{
+    background: rgba(109,109,110,0.7);
+    border: none;
+    border-radius: 0.31em;
+    padding: 0.93em 1.87em;
+    color: #fff;
+    margin-right: 1.25em;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+.botones-play-info .boton-play i{
+    margin-right: 0.8em;
+}
+.botones-play-info .boton-info i{
+    margin-right: 0.5em;
+}
+
+.carruselseries{
+    position: relative;
+    margin: 3vw 0;
+    top: 35em;
+    right: 0;
+    width: 88.94em;
+    height: 13.23em;
+    background-color: rgba(20,20,20);
+    background: linear-gradient(0deg, rgba(20,20,20,1) 62%, rgba(20,20,20,0) 100%);
+}
+.carruselseries .titulo-categoria{
+    position: absolute;
+    width: 90vw;
+    left: 3.55em;
+    display: block;
+    background-color: transparent;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 0.7em;
+}
+.carruselseries .portada-series{
+    background-color: transparent;
+    display: block;
+    width: 88.93em;
+    height: 7.64em;
+    position:absolute;
+    left: 0;
+    top: 4em;
+}
+.portada-series div{
+    position: relative;
+    display: inline-block;
+    width: 14.35em;
+    height: 7.64em;
+    margin-right: 0.18em;
+}
+
+div #stranger{
+    width: 14.2em;
+    height: 7.64em;
+}
+div #trece-horas{
+    width: 14.2em;
+    height: 7.64em;
+}
+div #peaky-blinders{
+    width: 14.2em;
+    height: 7.64em;
+}
+div #caza-asesinos{
+    width: 14.2em;
+    height: 7.64em;
+}
+div #casa-papel{
+    width: 14.2em;
+    height: 7.64em;
+}
+div #controlz{
+    width: 14.82em;
+    height: 7.64em;
+}
+/* Section2- tendencias */
+
+.tendencias{
+    position: relative;
+    margin: 2vw 0;
+    top: 33em;
+    right: 0;
+    width: 88.94em;
+    height: 13.23em;
+    background-color: transparent;
+}
+.tendencias .titulo-categoria{
+    position: absolute;
+    width: 90vw;
+    left: 3.55em;
+    display: block;
+    background-color: rgba(137, 43, 226, 0);
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 0.7em;
+}
+.tendencias .portadas-tendencias{
+    background-color: rgba(97, 93, 93, 0);
+    display: block;
+    width: 88.93em;
+    height: 7.64em;
+    position:absolute;
+    left: 0;
+    top: 4em;
+}
+.tendencias div{
+    position: relative;
+    display: inline-block;
+    width: 14.35em;
+    height: 7.64em;
+    margin-right: 0.18em;
+}
+
+div #estamos-muertos{
+    width: 14.2em;
+    height: 7.64em;
+}
+div #el-infierno{
+    width: 14.2em;
+    height: 7.64em;
+}
+div #chema{
+    width: 14.2em;
+    height: 7.64em;
+}
+div #malverde{
+    width: 14.2em;
+    height: 7.64em;
+}
+div #mas-buscados{
+    width: 14.2em;
+    height: 7.64em;
+}
+div #making{
+    width: 14.82em;
+    height: 7.64em;
 }

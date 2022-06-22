@@ -10,7 +10,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Serif&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Serif&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Serif&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/686ff65f59.js" crossorigin="anonymous"></script>
     <title>Netflix</title>
 </head>
 <body>
@@ -39,10 +43,12 @@
                         </div>
                     </a>
                 </div>
-            </div>  
+            </div>
+        </div>  
         </nav>
-    <div class="container-info">
-        <section class="titulo-sinopsis">
+    
+    <header class="container-info">
+        <div class="titulo-sinopsis">
             <div class="cartel-titulo">
                 <img src="src/img/titulo-braking.webp" alt="" class="img-titulo">
             </div>
@@ -54,13 +60,37 @@
                 </p>
             </div>
             <div class="botones-play-info">
-                <a href="#">
-                    <button class="boton-reproducir">
-                        <span> Reproducir </span>
-                    </button>
-                </a>
+                <button role="button" class="boton-play"><i class="fa-solid fa-play"></i>Reproducir</button>
+                <button role="button" class="boton-info"><i class="fa-solid fa-circle-info"></i>Más informacion</button>
             </div>
-        </section>
-    </div>
+        </div>
+    </header>
+    <section class="carruselseries">
+        <a href="#"><h2 class="titulo-categoria">Series</h2></a>
+         <div class="portada-series">
+             <div><img src="src/img/series/1.jpg" alt="" id="stranger"></div>
+             <div><img src="src/img/series/2.webp" alt="" id="trece-horas"></div>
+             <div><img src="src/img/series/3.jpg" alt="" id="peaky-blinders"></div>
+             <div><img src="src/img/series/4.jpg" alt="" id="caza-asesinos"></div>
+             <div><img src="src/img/series/5.jpg" alt="" id="casa-papel"></div>
+             <div><img src="src/img/series/6.jpg" alt="" id="controlz"></div>
+         </div>
+     </section>
+     <section class="tendencias">
+        <a href="#"><h2 class="titulo-categoria">Peliculas</h2></a>
+        <div class="portadas-tendencias">
+            <div><img src="src/img/tendencias/1.jpg" alt="" id="estamos-muertos"></div>
+             <div><img src="src/img/tendencias/2.webp" alt="" id="el-infierno"></div>
+             <div><img src="src/img/tendencias/3.webp" alt="" id="chema"></div>
+             <div><img src="src/img/tendencias/4.webp" alt="" id="malverde"></div>
+             <div><img src="src/img/tendencias/5.webp" alt="" id="mas-buscados"></div>
+             <div><img src="src/img/tendencias/6.jpg" alt="" id="making"></div>
+            
+            
+        </div>
+    
+     </section>
+    
+
 </body>
 </html>
